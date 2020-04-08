@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    background: url("../images/main_bg.png") no-repeat center top;
+    background-size: cover;
+}
+
+.content {
+    min-width: 360px;
+    max-width: 1000px;
+    width: 690px;
+    height: 400px;
+    margin: 110px auto;
+    border-radius: 10px;
+    background-color: #111a28;
+    box-shadow: 0 0 65px 0 rgba(0, 0, 0, 0.82);
+}
+
+.product {
+    font-family: 'Spartan', sans-serif;
+    color: #e1e1e1;
+    display: flex;
+}
+
+.product__logo {
+    width: 35px;
+    padding: 25px 20px;
+    text-align: left;
+}
+
+.product__img {
+    padding: 45px 80px 105px 35px;
+}
+
+.product__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 75px 30px 100px 0px;
+}
+
+.product__name {
+    font-size: 24px;
+    font-weight: 100;
+    line-height: normal;
+}
+
+.product__description {
+    font-size: 14px;
+    opacity: 0.6;
+    padding: 16px 0 24px;
+}
+
+.product__rating {
+    margin-bottom: 27px;
+    width: 60px;
+    height: 12px;
+}
+
+.product__rating input[type="radio"] {
+    display: none;
+}
+
+.label_rating {
+    float: right;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url("../images/star.png") no-repeat 50% 0;
+    cursor: pointer;
+}
+
+/*Пишем правила смены положения background-а*/
+.product__rating .label_rating:hover, /*Правило для ховера на текущий лейбл*/
+.product__rating .label_rating:hover ~ .label_rating, /*Правило для всех следующих лейблов по DOM дереву*/
+.product__rating input[type="radio"]:checked ~ .label_rating /*Правило для всех следующих лейблов после выбранного инпута, чтобы звездочки как бы зафиксировались*/
+    {
+    background-position: 50% -12px;
+}
+
+.product__form {
+    position: relative;
+}
+
+.product__select {
+    display: flex;
+}
+
+.product__size select, .product__quantity select {
+    background: #111a28;
+    color: #e1e1e1;
+    font-family: 'Spartan', sans-serif;
+    font-size: 14px;
+    letter-spacing: normal;
+    font-weight: 100;
+    padding: 5px 0 5px 10px;
+    width: 70px;
+    height: 30px;
+    border: solid 1px rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.button {
+    width: 185px;
+    height: 40px;
+    background: #111a28;
+    color: #e1e1e1;
+    font-family: 'Spartan', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    border: solid 1px rgba(255, 255, 255, 0.6);
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgb(76, 82, 90, 0.5);
+}
+
+.product__color {
+    position: absolute;
+    left: -260px;
+    bottom: -45px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.product__color label{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    margin-right: 10px;
+}
+
+.product__color .blue {
+    background: #1f273f;
+}
+
+.product__color .white {
+    background: #fff;
+}
+
+.product__color .red {
+    background: #ed3333;
+}
+
+.product__color .aqua {
+    background: #29e3ea;
+}
+
+.radio:hover + label {
+    width: 12px;
+    height: 12px;
+}
+
+.radio:checked + label {
+    width: 14px;
+    height: 14px;
+    border: solid 2px rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+/* 
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+*/

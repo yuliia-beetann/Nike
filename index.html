@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="container">
+    <main class="content">
+
+        <section class="product">
+
+            <div class="product__images">
+                <div class="product__logo"><img src="images/logo.png" alt="logo"></div>
+                <img class="product__img" src="images/Nike-SB-Stefan-Janoski-Max.png" alt="/Nike-SB-Stefan-Janoski-Max">
+            </div>
+
+
+            <div class="product__info">
+
+                <h2 class="product__name">Nike SB Stefan <br>Janoski Max</h2>
+                <p class="product__description">Unisex Skateboarding Shoe</p>
+
+                <div class="product__rating">
+                    <input name="rating" value="5" id="rating_5" type="radio" />
+                    <label for="rating_5" class="label_rating"></label>
+
+                    <input name="rating" value="4" id="rating_4" type="radio" />
+                    <label for="rating_4" class="label_rating"></label>
+
+                    <input name="rating" value="3" id="rating_3" type="radio" />
+                    <label for="rating_3" class="label_rating"></label>
+
+                    <input name="rating" value="2" id="rating_2" type="radio" />
+                    <label for="rating_2" class="label_rating"></label>
+
+                    <input name="rating" value="1" id="rating_1" type="radio" />
+                    <label for="rating_1" class="label_rating"></label>
+                </div>
+
+                <form action="" class="product__form">
+
+                    <div class="product__select">
+
+                        <div class="product__size">
+                            <select name="size" id="size">
+                                <option value="0" disabled selected="selected">Size</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                            </select>
+                        </div>
+
+                        <div class="product__quantity">
+                            <select name="quantity" id="quantity">
+                                <option value="0" disabled selected="selected">Qty</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="product__color">
+                        <input type="radio" class="radio" id="blue" name="color">
+                        <label class="blue" for="blue"></label>
+                        <input type="radio" class="radio" id="white" name="color">
+                        <label class="white" for="white"></label>
+                        <input type="radio" class="radio" id="red" name="color">
+                        <label class="red" for="red"></label>
+                        <input type="radio" class="radio" id="aqua" name="color">
+                        <label class="aqua" for="aqua"></label>
+                    </div>
+
+                    <button class="button" type="submit">Add to cart</button>
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
